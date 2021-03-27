@@ -1,4 +1,4 @@
-import { createSlice } from 'react-redux';
+import { createSlice } from '@reduxjs/toolkit';
 
 const options = {
     name: 'cards',
@@ -7,11 +7,11 @@ const options = {
     },
     reducers: {
         addCard: (state, action) => {
-            const { cardId, cardFront, cardBack} = action.payload;
+            const { cardId, front, back} = action.payload;
             state.cards[cardId] =  {
                 cardId: cardId,
-                front: cardFront,
-                back: cardBack
+                front: front,
+                back: back
             };
         },
     },
