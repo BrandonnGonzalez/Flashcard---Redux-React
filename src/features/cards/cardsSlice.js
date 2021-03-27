@@ -2,18 +2,16 @@ import { createSlice } from 'react-redux';
 
 const options = {
     name: 'cards',
-    
     initialState: {
         cards: {}
     },
-
     reducers: {
         addCard: (state, action) => {
-            const { cardId, front, back} = action.payload;
+            const { cardId, cardFront, cardBack} = action.payload;
             state.cards[cardId] =  {
                 cardId: cardId,
-                front: front,
-                back: back
+                front: cardFront,
+                back: cardBack
             };
         },
     },
