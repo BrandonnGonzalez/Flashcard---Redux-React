@@ -9,14 +9,14 @@ const options = {
         addCard: (state, action) => {
             const { cardId, front, back} = action.payload;
             state.cards[cardId] =  {
-                cardId: cardId,
+                id: cardId,
                 front: front,
                 back: back
             };
         },
     },
     //extra reducers here
-};
+}
 
 export const cardsSlice = createSlice(options);
 //selector

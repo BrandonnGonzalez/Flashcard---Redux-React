@@ -22,11 +22,11 @@ const options = {
 };
 
 // thunk to quizz to the related topic
-export const addQuizAndAddToTopic = payload => {
-    const { quizId, name, topicId, cardIds } = payload;
+export const addQuizAddQuizId = quiz => {
+    const { quizId, name, topicId, cardIds } = quiz;
     return (dispatch) => {
-        dispatch(quizzesSlice.actions.addQuiz(payload));
-        dispatch(addQuizId({quizId: quizId, topicId: topicId}));
+        dispatch(quizzesSlice.actions.addQuiz(quiz));
+        dispatch(addQuizId( { quizId: quizId, topicId: topicId } ));
     }
 };
 
