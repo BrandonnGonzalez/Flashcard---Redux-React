@@ -2,7 +2,7 @@
 
 ## About
 
-Project developed dring the Full-Stack Engineer Path from the codecademy curriculum.
+Project developed dring the Front End Engineer Path from the Codecademy.
 
 ## Goals
 
